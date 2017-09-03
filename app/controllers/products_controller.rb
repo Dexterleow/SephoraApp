@@ -15,7 +15,16 @@ class ProductsController < ApplicationController
     @product = Product.new(product_params)
     if @product.save
       redirect_to @product
-    else 
+
+      # sub_subcategory: Product has to keep track of the sub_subcategory it belongs to
+      # @sub_subcategory = SubSubcategory.find(params[:SubSubcategory_id])
+      # @product = @sub_subcategory.product.create(product_params)
+
+      # subcategory: Product has to keep track of the sub_subcategory it belongs to
+      # category: Product has to keep track of the sub_subcategory it belongs to
+
+
+    else
       render :new
     end
   end
@@ -25,5 +34,4 @@ class ProductsController < ApplicationController
   def product_params
     params.require(:product).permit(:name, :description, :price)
   end
-
 end
