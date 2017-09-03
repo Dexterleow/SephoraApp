@@ -11,7 +11,7 @@ feature 'Creating Products' do
         fill_in 'Description', with: 'description'
         fill_in 'Price', with: 'price'
         # click submit button
-        click_button 'Create Update'
+        click_button 'Create Product'
         # expect page to have the content we submitted
         expect(page).to have_content('name')
         expect(page).to have_content('description')
