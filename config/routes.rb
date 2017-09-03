@@ -3,4 +3,6 @@ Rails.application.routes.draw do
   root 'products#index'
     resources :products
     resources :sub_subcategories
+    resources :subcategories
+    resources :categories
 end
