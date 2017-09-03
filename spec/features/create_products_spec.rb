@@ -15,6 +15,6 @@ feature 'Creating Products' do
         # expect page to have the content we submitted
         expect(page).to have_content('name')
         expect(page).to have_content('description')
-        expect(page).to have_content('price')
+        expect(page).to have_content('0.0')
     end
 end
