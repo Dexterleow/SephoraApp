@@ -7,8 +7,7 @@ How to run the test suite:
 * In command line, type 'rspec' to run the tests.
 
 
-<!--  -->
-* Ruby version
+<!-- * Ruby version
 
 * System dependencies
 
@@ -22,4 +21,4 @@ How to run the test suite:
 
 * Deployment instructions
 
-* ...
+* ... -->
