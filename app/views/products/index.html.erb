@@ -1,4 +1,32 @@
-<h1>Welcome to Products</h1>
-<p>Find me in app/views/products/index.html.erb</p>
+<h1>Welcome to Sephora</h1>
+<%# <p>Find me in app/views/products/index.html.erb</p> %>
 
+<% @products.each do |product| %>
+<table>
+  <tr>
+    <th>Name:</th>
+    <td><%= product.name %></td>
+  </tr>
+  <br>
+  <tr>
+    <th>Description:</th>
+    <td><%= product.description %></td>
+  </tr>
+  <br>
+  <tr>
+    <th>Price:</th>
+    <td><%= product.price %></td>
+  </tr>
+</table>
+<%end %>
+
+<br>
+<br>
 <%= link_to "Create Product", new_product_path %>
+
+<style>
+table, th, td {
+    border: 1px solid black;
+}
+</style>
+
